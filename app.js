@@ -1,0 +1,25 @@
+// const http = require('http');
+
+const express = require('express');
+const bodyParser = require('body-parser');
+
+// For Next Time: Start filtering paths (Lesson 68)
+
+const app = express();
+
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(adminRoutes);
+app.use(shopRoutes);
+
+app.use((req, res, next) => {  // 'Catch-all' middleware for unhandled routes
+    res.status(404).send('<h1>Page Not Found!</h1>');
+});
+
+app.listen(3000);
