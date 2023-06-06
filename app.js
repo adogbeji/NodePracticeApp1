@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// For Next Time: Start filtering paths (Lesson 68 - 1:21)
+// For Next Time: Continue creating HTML pages (Lesson 69 - 3:30)
 
 const app = express();
 
