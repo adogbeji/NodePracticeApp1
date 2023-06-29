@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// For Next Time: Continue serving HTML pages (Lesson 70 - 3:10)
+// For Next Time: Start returning a 404 Page (Lesson 71)
 
 const app = express();
 
