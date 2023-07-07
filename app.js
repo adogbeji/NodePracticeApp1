@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// For Next Time: Start looking at text lecture (Lesson 72)
+// For Next Time: Continue using a helper function (Lesson 73 - 2:12)
 
 const app = express();
 
