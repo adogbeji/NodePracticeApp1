@@ -4,7 +4,9 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// For Next Time: Continue using a helper function (Lesson 73 - 2:45)
+const rootDir = require('./util/path');
+
+// For Next Time: Begin styling pages (Lesson 74)
 
 const app = express();
 
@@ -21,7 +23,7 @@ app.use(shopRoutes);
 
 app.use((req, res, next) => {  // 'Catch-all' middleware for unhandled routes
     // res.status(404).send('<h1>Page Not Found!</h1>');
-    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+    res.status(404).sendFile(path.join(rootDir, 'views', '404.html'));
 });
 
 app.listen(3000);
