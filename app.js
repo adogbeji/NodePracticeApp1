@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 const rootDir = require('./util/path');
 
-// For Next Time: Begin styling pages (Lesson 74)
+// For Next Time: Continue styling pages (Lesson 74 - 2:15)
 
 const app = express();
 
