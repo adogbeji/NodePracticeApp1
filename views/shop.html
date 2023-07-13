@@ -7,9 +7,44 @@
     <title>Shop Page</title>
 
     <style>
+        *,
+        *::before,
+        *::after {  /* CSS Reset */
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
+            font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
+        }
+
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+            min-height: 100vh;  /* Ensures page body is at least as high as browser viewport */
+            font-family: Candara, 'Arial Narrow', Verdana, sans-serif;
+            font-weight: 300;
+            color: #000000;
+            box-sizing: border-box;  /* Border & Padding included in Width & Height */
+        }
+
         .topnav {
             width: 100vw;
             background-color: #7E0FC5;
+        }
+
+        .topnav__link-box {
+            width: 90%;
+            background-color: grey;
+        }
+
+        .topnav__link {
+            font-size: 2.1rem;
+            color: #FFFFFF;
+            display: inline-block;
+            text-decoration-line: none;
         }
     </style>
 </head>
