@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-// Next Time: Lesson 61 (How Middleware Works - 0:33)
+// Next Time: Lesson 61 (How Middleware Works - 1:04)
 
 const app = express();
 
